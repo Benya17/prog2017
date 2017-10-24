@@ -1,7 +1,7 @@
 def search(v,k):
     n = len(v)
     for i in range(n):
-        if k == v[i]:
+        if k == v[i] and type(k) == type(v[i]):
             return i
     return "nincs"
 
@@ -20,7 +20,7 @@ print search(t,7)
 
 
 
-tof = ['jajj',True,87,11,"busz"]
+tof = ['fing3',True,87,11,1.2,"busz",876,46464,42]
 
 i = 0
 
@@ -28,6 +28,7 @@ while search(t,tof[i]) == "nincs":
     i = i+1
     print "nincs meg: ", tof[i-1]
     print "most keresem: ", tof[i]
+
 
 print "megvan"
 

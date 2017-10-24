@@ -28,7 +28,7 @@ countlist = []
 maxlevs = []
 corrects = []
 
-for testno in range(100):
+for testno in range(TESTS):
     broken = 0
     counts = 0
     maxlev = int(random() * 100) + 1
